@@ -16,6 +16,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+{
+
+}
+
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token")
 
 @app.post("/token")
